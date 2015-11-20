@@ -30,6 +30,7 @@ A python script to get the score information
     ```bash
     python3 livescore.py -s teamname
     ```
+
 #### mangascraper.py
 A python script to get the chapter list of manga.
 
@@ -39,6 +40,6 @@ python3 mangascraper.py
 ```
 
 ```bash
-python3 mangascraper.py **manga name with spaces**
+python3 mangascraper.py manga name with spaces
 ```
 
