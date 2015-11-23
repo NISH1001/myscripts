@@ -43,3 +43,5 @@ python3 mangascraper.py
 python3 mangascraper.py manga name with spaces
 ```
 
+#### vianet.py
+A python script to get the current status of my vianet plan

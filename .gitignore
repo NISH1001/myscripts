@@ -7,3 +7,5 @@ __pycache__/
 
 # vim
 *.swp
+
+bin/data/
