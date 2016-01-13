@@ -45,3 +45,26 @@ python3 mangascraper.py manga name with spaces
 
 #### vianet.py
 A python script to get the current status of my vianet plan
+
+#### paradoxnet.py
+A python script to scan and connect to nearby networks.  
+Uses `iwlist` to scan the network and `nmcli` for connecting.
+
+```bash
+python3 paradoxnet.py
+```
+
+##### usage
+- scan nearby wifi networks
+    ```bash
+    python3 paradoxnet.py -s
+    ```
+- connect to wifi secured networks
+    ```bash
+    python3 -n net_name -p password_here
+    ```
+- connect to wifi open networks
+    ```bash
+    python3 -n net_name
+    ```
+
