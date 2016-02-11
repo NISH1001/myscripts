@@ -67,5 +67,6 @@ python3 paradoxnet.py
     ```bash
     python3 -n net_name
     ```
+
 #### sc.py
 A simple soundcloud track downloader. It needs your client id which you should get from the soundcloud api.
