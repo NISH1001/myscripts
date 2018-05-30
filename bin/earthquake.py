@@ -6,7 +6,7 @@ from collections import OrderedDict
 
 """
 returns a list of list
-at index =0, there is header 
+at index =0, there is header
 rest lists are real data
 """
 def get_recent(url):
@@ -16,7 +16,8 @@ def get_recent(url):
         return []
 
     extractor = BeautifulSoup(response.content, "html.parser")
-    content = extractor.find_all("div", {'class': 'block2-content'})[0]
+    # content = extractor.find_all("div", {'class': 'block2-content'})[0]
+    content = extractor.find_all("div", {'class': 'data_table_wrapper'})[0]
     table = content.find_all(["tr"])
 
     # table header shit
