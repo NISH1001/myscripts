@@ -8,18 +8,17 @@ Just add the folder `bin` to system path by adding following line to your `bashr
 export PATH=${PATH}:"/home/username/path-to-bin/"
 ```
 
-### Some Scripts
 
-#### temperature.sh
+## temperature.sh
 A bash script to get the temperature info of your cpu
 
-#### earthquake.py
+## earthquake.py
 A python script to view the **five** recent earthquakes in Nepal
 
-#### livescore.py
+## livescore.py
 A python script to get the score information
 
-##### usage
+### usage
 - for viewing all the available today's scores:
     ```bash
     python3 livescore.py
@@ -31,10 +30,10 @@ A python script to get the score information
     python3 livescore.py -s teamname
     ```
 
-#### mangascraper.py
+## mangascraper.py
 A python script to get the chapter list of manga.
 
-##### usage
+### usage
 ```bash
 python3 mangascraper.py
 ```
@@ -43,10 +42,10 @@ python3 mangascraper.py
 python3 mangascraper.py manga name with spaces
 ```
 
-#### vianet.py
+## vianet.py
 A python script to get the current status of my vianet plan
 
-#### paradoxnet.py
+## paradoxnet.py
 A python script to scan and connect to nearby networks.  
 Uses `iwlist` to scan the network and `nmcli` for connecting.
 
@@ -54,7 +53,7 @@ Uses `iwlist` to scan the network and `nmcli` for connecting.
 python3 paradoxnet.py
 ```
 
-##### usage
+### usage
 - scan nearby wifi networks
     ```bash
     python3 paradoxnet.py -s
@@ -68,5 +67,21 @@ python3 paradoxnet.py
     python3 -n net_name
     ```
 
-#### sc.py
+## sc.py
 A simple soundcloud track downloader. It needs your client id which you should get from the soundcloud api.
+
+
+## scmd
+
+A naive tool to search over my cmd logs.
+
+I usually store every command I type in the terminal at `~/.logs/` direcotory. 
+
+#### Usage
+`python scmd.py <token1> <token2> ... `
+
+The arguments are **ANDed**. That is, for each line in the log, if all the token are found, it's a match.
+
+More the tokens, more concise is the search.
+
+This script can be put in the system path.
