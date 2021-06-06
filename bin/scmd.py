@@ -8,7 +8,7 @@ import sys
 import subprocess
 
 
-LOGS_DIR = os.getenv("LOGS_DIR", os.path.expanduser("~/.logs/"))
+LOGS_DIR = os.getenv("LOGS_DIR", os.path.expanduser("~/.bash-logs/logs/"))
 CMD_SPLITTER = os.getenv("CMD_SPLITTER", 2)
 
 
