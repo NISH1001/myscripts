@@ -38,8 +38,9 @@ def main():
     for log in logs:
         for line in log:
             m = all([arg in line for arg in args])
-            if m:
-                matches.append(" ".join(line.split()[CMD_SPLITTER:]))
+            cmd = " ".join(line.split()[CMD_SPLITTER:])
+            if m and cmd not in matches:
+                matches.append(cmd)
 
     print(f"{len(matches)} matches")
     res = "\n".join(matches)
